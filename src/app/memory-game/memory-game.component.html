@@ -1,1 +1,11 @@
-<p>memory-game works!</p>
+<p>Lets check your remebering power.</p>
+<p>Lets have in record who are you</p>
+
+<div>
+    Name : <input type="text" name="name" [(ngModel)] = "name">
+    <button (click)= handleValidName()></button>
+</div>
+<div *ngIf="inValidName">
+    <p>{{errorMessage}}</p>
+</div>
+<p>Welcome to Memory Game {{name}}</p>
